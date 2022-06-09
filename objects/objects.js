@@ -1,9 +1,21 @@
-export function makePet() {
+export function makePet(name, type, age, food, toys) {
     return {
-        name: 'felix',
-        type: 'cat',
-        age: '6',
-        food: 'tuna',
-        toys: ['feather chaser', 'laser pointer', 'ball of yarn']
+        name: name,
+        type: type,
+        age: age,
+        food: food,
+        toys: toys
+    };
+}
+
+
+
+
+
+export function formatWork(data) {
+    return {
+        work: data.book.title,
+        writer: (data.author.first + ' ' + data.author.last)//string concatenation ''+
+
     };
 }
